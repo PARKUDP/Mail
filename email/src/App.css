@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,24 @@
 
 .App-link {
   color: #61dafb;
+}
+
+/*Appの送信先、件名のスタイル*/
+.text_com {
+  color: #000000;
+  font-size: 15px;
+  width: 35.5%;
+  height: 75%;
+  font-weight: normal;
+}
+
+/*Appの本文のスタイル*/
+.text_main {
+  color: #000000;
+  font-size: 15px;
+  width: 35.5%;
+  height: 100%;
+  font-weight: normal;
 }
 
 @keyframes App-logo-spin {

@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+// メール送信ボタン
+function SEND_BUTTON() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <button>送信</button>
+  );
+}
+
+// メールフォーム
+function QUESTION_MAIL() {
+  return (
+    <div>
+      <label for="email">送信先</label><br></br>
+      <input type="email" id="email" pattern=".+@gmail\.com" placeholder="メールアドレスを入力してください。"class="text_com"/><br></br>
+      <label for="subject">件名</label><br></br>
+      <input type="text" id="subject" placeholder="件名を入力してください。"class="text_com"/><br></br>
+      <label>本文</label><br></br>
+      <textarea name="body" placeholder="本文を入力してください。"class="text_main"/><br></br>
+      <SEND_BUTTON />
     </div>
   );
 }
 
-export default App;
+
+// メイン
+export default function email() {
+  return (
+    <div>
+      <h1>メール</h1>
+      <QUESTION_MAIL />
+    </div>
+  );
+}
