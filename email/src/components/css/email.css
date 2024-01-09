@@ -1,0 +1,56 @@
+.email {
+  text-align: center;
+}
+
+.email-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .email-logo {
+    animation: email-logo-spin infinite 20s linear;
+  }
+}
+
+.email-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.email-link {
+  color: #61dafb;
+}
+
+/*Appの送信先、件名のスタイル*/
+.text_com {
+  color: #000000;
+  font-size: 15px;
+  width: 35.5%;
+  height: 75%;
+  font-weight: normal;
+}
+
+/*Appの本文のスタイル*/
+.text_main {
+  color: #000000;
+  font-size: 15px;
+  width: 35.5%;
+  height: 100%;
+  font-weight: normal;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

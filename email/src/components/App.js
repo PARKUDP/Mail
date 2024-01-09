@@ -1,5 +1,4 @@
-import React from "react";
-import "./css/email.css";
+import "./css/App.css";
 
 // メール送信ボタン
 function SEND_BUTTON() {
@@ -42,6 +41,7 @@ function QUESTION_MAIL() {
   );
 }
 
+// メイン
 export default function email() {
   return (
     <div>
