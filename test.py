@@ -24,6 +24,3 @@ subject = input("件名>")
 body = input("本文>")
 
 send_email(user, password, send_user, subject, body)
-
-
-# 안녕하세요.
